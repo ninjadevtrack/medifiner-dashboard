@@ -1,0 +1,42 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.button {
+  display: inline-block;
+  width: 220px;
+  padding: 10px 8px;
+  background: $primary-color;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 1.14px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: $primary-color-hover;
+  }
+
+  &--secondary {
+    padding: 8px;
+    background: transparent;
+    border: 2px solid $border-color;
+    color: $primary-color;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    &:hover {
+      background: transparent;
+      border-color: $primary-color-hover;
+      color: $primary-color-hover;
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}

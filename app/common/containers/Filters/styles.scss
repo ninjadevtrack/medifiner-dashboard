@@ -1,0 +1,47 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.filters {
+  width: 355px;
+  height: 100%;
+  padding: 41px 30px;
+  background: $background-1;
+  border: 0;
+  border-left: 1px solid $border-color;
+
+  &__title {
+    position: relative;
+    padding: 0 5px 14px;
+  }
+
+  &__container {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  &__title-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 26px;
+  }
+
+  &__title-toggle-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+
+  &__title-toggle {
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: $primary-color;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}

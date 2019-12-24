@@ -1,0 +1,20 @@
+.map {
+  position: relative;
+  width: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+
+  &__container {
+    width: 100%;
+    min-height: 300px;
+    height: 700px;
+    max-height: 700px;
+  }
+}
+
+.map-popup-disable-pointer-events {
+  pointer-events: none !important;
+
+  & > * {
+    pointer-events: none !important;
+  }
+}

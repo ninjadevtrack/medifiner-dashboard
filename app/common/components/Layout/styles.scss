@@ -1,0 +1,17 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.page-layout {
+  &__main-column {
+    float: left;
+    width: 75%;
+    padding-top: 39px;
+    padding-right: 15px;
+    min-height: calc(100vh - 145px);
+  }
+
+  &__right-column {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@routes/*": ["app/routes/*"],
+      "@common/*": ["app/common/*"],
+      "@actions/*": ["app/actions/*"],
+      "@selectors/*": ["app/selectors/*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

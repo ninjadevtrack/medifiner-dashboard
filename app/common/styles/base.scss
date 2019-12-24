@@ -1,0 +1,76 @@
+@import './app/common/styles/utils/_vars.scss';
+@import './app/common/styles/_icons.scss';
+
+* {
+  font-family: 'Barlow', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-2;
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+h1 {
+  margin: 0;
+	color: $text-color;
+	font-size: 22px;
+	font-weight: 700;
+  line-height: 26px;
+	letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+	color: $text-color;
+	font-size: 20px;
+	font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin: 0;
+	color: $text-color;
+	font-size: 16px;
+	font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+h4 {
+	color: $text-light-color;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 1.5px;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color-hover;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.page-container {
+  max-width: 1432px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+strong {
+  color: $text-color;
+}

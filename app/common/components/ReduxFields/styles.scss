@@ -1,0 +1,105 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.field {
+  margin-bottom: 16px;
+
+  &__input--error {
+    border-color: $error;
+  }
+
+  &__error {
+    margin-top: 6px;
+    color: $error;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.55px;
+  }
+
+  &__label {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    color: $text-color;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+}
+
+.select {
+  &__control {
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid $border-color !important;
+
+    &--is-focused {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &__indicator {
+    color: $primary-color !important;
+  }
+
+  &__value-container {
+    padding: 0 !important;
+  }
+
+  &__placeholder {
+    margin: 0 !important;
+    color: $text-light-color !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 26px !important;
+    letter-spacing: 0.8px !important;
+  }
+
+  &__menu {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 3px !important;
+    background: $primary-color !important;
+    box-shadow: none !important;
+  }
+
+  &__menu-list {
+    padding: 20px 13px !important;
+  }
+
+  &__option {
+    padding: 2px 20px 4px !important;
+    border-radius: 18.5px;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 26px !important;
+    cursor: pointer !important;
+    transition: all .25s ease;
+
+    &--is-focused {
+      background: rgba(19, 139, 219, .3) !important;
+    }
+
+    &--is-selected {
+      background: $primary-color-hover !important;
+    }
+  }
+
+  &__single-value {
+    color: $primary-color !important;
+  }
+}
+
+.error-component {
+  &__text {
+    margin: 0 0 26px;
+    color: $error;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,36 @@
+@import './app/common/styles/utils/_vars.scss';
+
+@mixin clearfix() {
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin row() {
+  margin-right: -$grid-gutter / 2;
+  margin-left: -$grid-gutter / 2;
+
+  @include clearfix();
+}
+
+@mixin column($columns: null, $type: left) {
+  float: $type;
+  @if ($columns) {
+    width: ($columns / 12) * 100%;
+  }
+  padding-right: $grid-gutter/2;
+  padding-left: $grid-gutter/2;
+}
+
+@mixin prefix($columns) {
+  margin-left: ($columns / 12) * 100%;
+}
+
+@mixin card() {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px 0 rgba(165, 173, 179, .4);
+}

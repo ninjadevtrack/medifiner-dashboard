@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Filter category component with flat categories 1`] = `
+<div
+  className="filter-category"
+>
+  <div
+    className="filter-category__title-container"
+  >
+    <p
+      className="filter-category__title-text"
+    >
+      Formulation
+    </p>
+    <p
+      className="filter-category__toggle-container"
+    >
+      <button
+        className="filter-category__toggle icon-arrow-up"
+        onClick={[Function]}
+        type="button"
+      />
+    </p>
+  </div>
+  <div
+    aria-hidden={false}
+    className="rah-static rah-static--height-auto"
+    style={
+      Object {
+        "height": "auto",
+        "overflow": "visible",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <ul
+        className="filters-list"
+      >
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="Oseltamivir75"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="Oseltamivir75"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Oseltamivir 75mg (pill)
+            </span>
+          </label>
+        </li>
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="Oseltamivir45"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="Oseltamivir45"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Oseltamivir 45mg (pill)
+            </span>
+          </label>
+        </li>
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="Oseltamivir30"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="Oseltamivir30"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Oseltamivir 30mg (pill)
+            </span>
+          </label>
+        </li>
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="oseltamivir"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="oseltamivir"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Oseltamivir Suspension (liquid)
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`With Snapshot Testing Filter category component with nested categories 1`] = `
+<div
+  className="filter-category"
+>
+  <div
+    className="filter-category__title-container"
+  >
+    <p
+      className="filter-category__title-text"
+    >
+      Pharmacy Category
+    </p>
+    <p
+      className="filter-category__toggle-container"
+    >
+      <button
+        className="filter-category__toggle icon-arrow-up"
+        onClick={[Function]}
+        type="button"
+      />
+    </p>
+  </div>
+  <div
+    aria-hidden={false}
+    className="rah-static rah-static--height-auto"
+    style={
+      Object {
+        "height": "auto",
+        "overflow": "visible",
+      }
+    }
+  >
+    <div
+      style={Object {}}
+    >
+      <ul
+        className="filters-list"
+      >
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="chain"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="chain"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Chain
+            </span>
+            <span
+              className="filters-list__filter-count"
+            >
+              (
+              528
+              )
+            </span>
+          </label>
+          <ul
+            className="filters-list"
+          >
+            <li
+              className="filters-list__item"
+            >
+              <label
+                className="filters-list__filter"
+                htmlFor="cvs"
+              >
+                <input
+                  checked={true}
+                  className="filters-list__checkbox"
+                  disabled={false}
+                  id="cvs"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="filters-list__fake-checkbox icon-tick"
+                />
+                <span
+                  className="filters-list__filter-name"
+                >
+                  CVS
+                </span>
+                <span
+                  className="filters-list__filter-count"
+                >
+                  (
+                  120
+                  )
+                </span>
+              </label>
+            </li>
+            <li
+              className="filters-list__item"
+            >
+              <label
+                className="filters-list__filter"
+                htmlFor="walmart"
+              >
+                <input
+                  checked={true}
+                  className="filters-list__checkbox"
+                  disabled={false}
+                  id="walmart"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="filters-list__fake-checkbox icon-tick"
+                />
+                <span
+                  className="filters-list__filter-name"
+                >
+                  Walmart
+                </span>
+                <span
+                  className="filters-list__filter-count"
+                >
+                  (
+                  245
+                  )
+                </span>
+              </label>
+            </li>
+            <li
+              className="filters-list__item"
+            >
+              <label
+                className="filters-list__filter"
+                htmlFor="walgreens"
+              >
+                <input
+                  checked={true}
+                  className="filters-list__checkbox"
+                  disabled={false}
+                  id="walgreens"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="filters-list__fake-checkbox icon-tick"
+                />
+                <span
+                  className="filters-list__filter-name"
+                >
+                  Walgreens
+                </span>
+                <span
+                  className="filters-list__filter-count"
+                >
+                  (
+                  163
+                  )
+                </span>
+              </label>
+            </li>
+          </ul>
+        </li>
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="independent"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="independent"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Independent
+            </span>
+            <span
+              className="filters-list__filter-count"
+            >
+              (
+              201
+              )
+            </span>
+          </label>
+        </li>
+        <li
+          className="filters-list__item"
+        >
+          <label
+            className="filters-list__filter"
+            htmlFor="franchise"
+          >
+            <input
+              checked={true}
+              className="filters-list__checkbox"
+              disabled={false}
+              id="franchise"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="filters-list__fake-checkbox icon-tick"
+            />
+            <span
+              className="filters-list__filter-name"
+            >
+              Franchise
+            </span>
+            <span
+              className="filters-list__filter-count"
+            >
+              (
+              100
+              )
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

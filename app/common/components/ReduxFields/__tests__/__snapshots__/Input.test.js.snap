@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Redux input component 1`] = `
+<div
+  className="field"
+>
+  <div
+    className="input input--wide"
+  >
+    <label
+      className="input__label"
+    >
+      Label
+    </label>
+    <input
+      autoComplete="off"
+      className="input__input field__input"
+      id="test"
+      name="test"
+      placeholder="Enter Zip Code"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`With Snapshot Testing Redux input component with value 1`] = `
+<div
+  className="field"
+>
+  <div
+    className="input input--wide"
+  >
+    <label
+      className="input__label"
+    >
+      Label
+    </label>
+    <input
+      autoComplete="off"
+      className="input__input field__input"
+      id="test"
+      name="test"
+      placeholder="Enter Zip Code"
+      type="text"
+      value="test value"
+    />
+  </div>
+</div>
+`;
+
+exports[`With Snapshot Testing Redux input component with value and error 1`] = `
+<div
+  className="field"
+>
+  <div
+    className="input input--wide"
+  >
+    <label
+      className="input__label"
+    >
+      Label
+    </label>
+    <input
+      autoComplete="off"
+      className="input__input field__input field__input--error"
+      id="test"
+      name="test"
+      placeholder="Enter Zip Code"
+      type="text"
+      value="test value"
+    />
+  </div>
+  <div
+    className="field__error"
+  >
+    Test error
+  </div>
+</div>
+`;

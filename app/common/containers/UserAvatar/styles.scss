@@ -1,0 +1,19 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.user-avatar {
+  width: 54px;
+  height: 54px;
+  background: $primary-color;
+  border-radius: 50%;
+
+  &__text {
+    margin: 0;
+    padding: 18px 0 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.6px;
+    text-align: center;
+  }
+}

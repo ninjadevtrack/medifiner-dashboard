@@ -1,0 +1,85 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.filters-list {
+  margin: 7px 0 0;
+  padding: 0;
+  list-style: none;
+
+  & & {
+    margin-left: 31px;
+  }
+
+  &__item + &__item {
+    margin-top: 7px;
+  }
+
+  &__filter {
+    position: relative;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__fake-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: $background-1;
+    border: 2px solid $primary-color;
+    border-radius: 2px;
+    vertical-align: middle;
+
+    &:before {
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  &__checkbox:checked + &__fake-checkbox {
+    background: $primary-color;
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__checkbox:disabled + &__fake-checkbox {
+    background: $background-3;
+    border-color: $border-color;
+  }
+
+  &__filter-name {
+    display: inline-block;
+    margin-left: 8px;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    vertical-align: middle;
+  }
+
+  &__checkbox:disabled ~ &__filter-name {
+    opacity: .5;
+    color: $text-light-color;
+  }
+
+  &__filter-count {
+    float: right;
+    color: #666F75;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  &__checkbox:disabled ~ &__filter-count {
+    opacity: .5;
+    color: $text-light-color;
+  }
+}

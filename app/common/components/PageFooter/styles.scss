@@ -1,0 +1,25 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.page-footer {
+  padding: 17px 0;
+  background: $primary-color;
+
+  &__left-column {
+    float: left;
+  }
+
+  &__right-column {
+    float: right;
+    text-align: right;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    color: $background-3;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 26px;
+  }
+}

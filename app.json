@@ -1,0 +1,24 @@
+{
+  "name": "Medfinder Dashboard",
+  "description": "",
+  "scripts": {},
+  "env": {
+    "BACKEND_URL": {
+      "description": "API Url Dashboard is pulling data from",
+      "value": "https://api.medfinder.us/api/"
+    },
+    "MAPBOX_KEY": {
+      "description": "Required key to run mapbox",
+      "value": "pk.eyJ1IjoicGllcnJldW5vIiwiYSI6ImNqanN4dmU2ODNibDIzcHM0M3JoMGQ5MHoifQ.uKamGKBTUrjM3V9DP25-IQ"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }]
+}

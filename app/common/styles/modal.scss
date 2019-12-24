@@ -1,0 +1,44 @@
+@import './app/common/styles/utils/_vars.scss';
+@import './app/common/styles/utils/_mixins.scss';
+
+
+.modal {
+  padding: 44px 40px 50px;
+
+  &__title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.2px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 26px 0 38px;
+    // color: $text-light-color;
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__column {
+    @include column(6);
+  }
+
+  &__fullcolumn {
+    @include column(12);
+  }
+
+
+  &__button-container {
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    &__column {
+      @include column(12);
+    }
+  }
+}

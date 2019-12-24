@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing User avatar component 1`] = `
+<div
+  className="user-avatar"
+>
+  <p
+    className="user-avatar__text"
+  >
+    J
+    D
+  </p>
+</div>
+`;

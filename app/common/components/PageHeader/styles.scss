@@ -1,0 +1,49 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.page-header {
+  position: relative;
+  z-index: 1;
+  background: $background-1;
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, .2);
+
+  &__logo-container {
+    float: left;
+    margin-right: 6px;
+    padding: 15px 0;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+
+  &__logo-highlight {
+    color: $primary-color-hover;
+  }
+
+  &__navigation-container {
+    float: left;
+  }
+
+  &__user-column {
+    float: right;
+    padding: 16px 0;
+  }
+
+  &__button-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__user-container {
+    display: inline-block;
+    margin-left: 36px;
+    vertical-align: middle;
+  }
+}

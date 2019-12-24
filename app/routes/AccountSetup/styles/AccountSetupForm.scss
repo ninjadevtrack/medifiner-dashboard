@@ -1,0 +1,33 @@
+.account-setup-form {
+  &__text {
+    margin: 0 0 25px;
+    color: #636D6E;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+  }
+
+  &__fields-container + &__fields-container {
+    margin-top: 38px;
+  }
+
+  &__fields-container-organization {
+    margin-bottom: 16px;
+    margin-top: 32px;
+    .field {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__fields-link {
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top:-16px;
+  }
+
+
+  &__button-container {
+    margin: 45px 0 0;
+  }
+}

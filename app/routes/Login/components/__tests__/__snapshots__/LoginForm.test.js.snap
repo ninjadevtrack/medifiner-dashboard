@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing LoginForm shows fields with button 1`] = `
+<form
+  className="login-form"
+  onSubmit={[Function]}
+>
+  <div
+    className="error-component"
+  />
+  <div
+    className="login-form__input-container"
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="input input--wide"
+      >
+        <label
+          className="input__label"
+        />
+        <input
+          autoComplete="off"
+          className="input__input field__input"
+          id="email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Email Address"
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="login-form__input-container"
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="input input--wide"
+      >
+        <label
+          className="input__label"
+        />
+        <input
+          autoComplete="off"
+          className="input__input field__input"
+          id="password"
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          placeholder="Password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <p
+    className="login-form__link-container"
+  >
+    <a
+      className="login-form__reset-password-link"
+      href="/reset-password"
+      onClick={[Function]}
+    >
+      Reset your password
+    </a>
+  </p>
+  <p
+    className="login-form__button-container"
+  >
+    <button
+      className="button button--wide"
+      type="submit"
+    >
+      Login
+    </button>
+  </p>
+  <p
+    className="login-form__text"
+  >
+    Missing your login credentials? Please contact 
+    <a
+      href="mailto:medfinder@healthmap.org"
+    >
+      medfinder@healthmap.org
+    </a>
+  </p>
+</form>
+`;

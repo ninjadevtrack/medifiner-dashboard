@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Navigation component 1`] = `
+<div
+  className="navigation"
+>
+  <ul
+    className="navigation__items-list"
+  >
+    <li
+      className="navigation__item"
+    >
+      <a
+        className="navigation__link navigation__link--active"
+        href="/components"
+        onClick={[Function]}
+      >
+        Map View
+      </a>
+    </li>
+    <li
+      className="navigation__item"
+    >
+      <a
+        className="navigation__link"
+        href="/historic-view"
+        onClick={[Function]}
+      >
+        Historic View
+      </a>
+    </li>
+    <li
+      className="navigation__item"
+    >
+      <a
+        className="navigation__link"
+        href="/find-antiviral"
+        onClick={[Function]}
+      >
+        Find an Antiviral
+      </a>
+    </li>
+  </ul>
+</div>
+`;

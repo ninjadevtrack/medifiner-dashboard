@@ -1,0 +1,70 @@
+@import './app/common/styles/utils/_vars.scss';
+@import './app/common/styles/utils/_mixins.scss';
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  &__toggle {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    padding: 0;
+    background-color: #a5adb3;
+    border: 0;
+    border-radius: 50%;
+    font-size: 7px;
+    color: #fff;
+    line-height: 12px;
+
+    &--active {
+      background: $primary-color;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__popup {
+    @include card();
+
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    z-index: 2;
+    width: 280px;
+    padding: 23px 30px;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  &__content {
+    margin-top: 12px;
+    color: $text-light-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  @media (max-width: $mobile) {
+    &__popup {
+      top: 18px;
+      transform: none;
+    }
+  }
+}

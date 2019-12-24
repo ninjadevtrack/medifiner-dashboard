@@ -1,0 +1,184 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.export-modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: auto;
+    background: rgba(53, 56, 59, .3);
+  }
+
+  &__content {
+    position: absolute;
+    top: 189px;
+    left: 50%;
+    width: 685px;
+    margin-bottom: 40px;
+    padding: 44px 30px 25px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, .2);
+    transform: translateX(-50%);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: $primary-color;
+    font-size: 18px;
+    line-height: 16px;
+
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__datepicker {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  &__datepicker-label {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  &__end-date,
+  &__start-date {
+    display: inline-block;
+    width: 50%;
+  }
+
+  &__end-date {
+    color: $text-light-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
+
+  &__download-button-container {
+    height: 65px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__download-button-icon {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+
+  &__disclaimer {
+    margin: 48px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
+
+  &__filters {
+    overflow: hidden;
+    height: 51px;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+
+    &--show-all {
+      overflow: visible;
+      height: auto;
+    }
+  }
+
+  &__filter {
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+
+    &:after {
+      content: ', ';
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+  }
+
+  &__filters--show-all &__filter {
+    display: list-item;
+
+    &:after {
+      content: none;
+    }
+  }
+
+  &__filter-name {
+    color: $text-light-color;
+  }
+
+  &__show-all {
+    margin-top: 11px;
+  }
+
+  &__show-all-container {
+    float: left;
+  }
+
+  &__show-all-button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__show-all-icon {
+    margin-left: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  &__show-all-text {
+    float: right;
+    margin: 0;
+    padding: 4px 0;
+    color: #636d6e;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+}

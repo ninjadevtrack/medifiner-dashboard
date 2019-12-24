@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Input component 1`] = `
+<div
+  className="input"
+>
+  <label
+    className="input__label"
+  >
+    Label
+  </label>
+  <input
+    className="input__input"
+    placeholder="Enter Zip Code"
+    type="text"
+  />
+</div>
+`;
+
+exports[`With Snapshot Testing Input component with custom class 1`] = `
+<div
+  className="test-input input"
+>
+  <label
+    className="input__label"
+  >
+    Label
+  </label>
+  <input
+    className="input__input"
+    placeholder="Enter Zip Code"
+    type="text"
+  />
+</div>
+`;
+
+exports[`With Snapshot Testing Input component with custom input class 1`] = `
+<div
+  className="input"
+>
+  <label
+    className="input__label"
+  >
+    Label
+  </label>
+  <input
+    className="input__input test-input-field"
+    placeholder="Enter Zip Code"
+    type="text"
+  />
+</div>
+`;

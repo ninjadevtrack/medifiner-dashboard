@@ -1,0 +1,26 @@
+.login-form {
+
+  &__input-container + &__input-container {
+    margin-top: 32px;
+  }
+
+  &__link-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__reset-password-link {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  &__button-container {
+    margin: 32px 0;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

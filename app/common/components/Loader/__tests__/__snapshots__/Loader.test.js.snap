@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Loader component 1`] = `
+<loader>
+  Loader
+</loader>
+`;
+
+exports[`With Snapshot Testing Loader component with custom class 1`] = `
+<loader
+  className="test-class loader"
+>
+  Loader
+</loader>
+`;

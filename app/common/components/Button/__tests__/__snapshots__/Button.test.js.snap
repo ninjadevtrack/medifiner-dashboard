@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Button component 1`] = `
+<button
+  className="button"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`With Snapshot Testing Button component with custom class 1`] = `
+<button
+  className="test-class button"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`With Snapshot Testing Link as button component 1`] = `
+<a
+  className="button"
+  href="/"
+  onClick={[Function]}
+>
+  Button
+</a>
+`;
+
+exports[`With Snapshot Testing Link as button component with custom class 1`] = `
+<a
+  className="test-class button"
+  href="/"
+  onClick={[Function]}
+>
+  Button
+</a>
+`;
+
+exports[`With Snapshot Testing Link as secondary button component 1`] = `
+<a
+  className="button button--secondary"
+  href="/"
+  onClick={[Function]}
+>
+  Button
+</a>
+`;
+
+exports[`With Snapshot Testing Secondary button component 1`] = `
+<button
+  className="button button--secondary"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`With Snapshot Testing Wide button component 1`] = `
+<button
+  className="button button--wide"
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`With Snapshot Testing Wide secondary button component 1`] = `
+<button
+  className="button button--secondary button--wide"
+  type="button"
+>
+  Button
+</button>
+`;

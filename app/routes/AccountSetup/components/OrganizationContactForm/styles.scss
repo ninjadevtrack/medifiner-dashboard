@@ -1,0 +1,143 @@
+@import './app/common/styles/utils/_vars.scss';
+@import './app/common/styles/utils/_mixins.scss';
+
+.contact {
+  padding: 31px 0 39px;
+  background: $primary-color-hover;
+
+  &__row {
+    @include row();
+  }
+
+  &__text-column {
+    @include column(6);
+    @include prefix(2);
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: $primary-color;
+    font-size: 18px;
+    line-height: 16px;
+
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    opacity: 0.9;
+    color: $background-2;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  &__button-column {
+    @include column(2);
+  }
+
+  &__button {
+    border-color: $background-2;
+    color: $background-2;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+
+  &__modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    overflow: scroll;
+    background-color: rgba(53, 56, 59, .3);
+  }
+
+  &__modal-content {
+    @include card();
+    position: absolute;
+    top: 189px;
+    right: 16px;
+    left: 16px;
+    max-width: 685px;
+    margin: 0 auto 26px;
+    padding: 0;
+  }
+  @media (max-width: $tablet-large) {
+    &__text-column {
+      @include column(8);
+      @include prefix(0);
+    }
+
+    &__button-column {
+      @include column(4);
+    }
+  }
+  @media (max-width: $mobile) {
+    &__text-column {
+      @include column(12);
+    }
+
+    &__text {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0.83px;
+      text-align: center;
+    }
+
+    &__button-column {
+      @include column(8);
+      @include prefix(2);
+      margin-top: 24px;
+    }
+
+    &__modal-content {
+      top: 26px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid $border-color;
+    border-radius: 4px;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 19px;
+
+    &:-moz-placeholder {
+      color: $text-light-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $text-light-color;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $text-light-color;
+    }
+  }
+}
+
+

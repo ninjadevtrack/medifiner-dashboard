@@ -1,0 +1,64 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.average-supply {
+  padding: 24px 30px 30px;
+  background: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+
+  &__text {
+    margin: 5px 0 0;
+    color: #636d6e;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 33px;
+    color: #636d6e;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  &__table-head-cell {
+    padding-bottom: 4px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 2px;
+    &--week {
+      font-weight: 300;
+      line-height: 2;
+    }
+  }
+
+  &__row-name {
+    border-bottom: 2px dotted $border-color;
+  }
+
+  &__color {
+    height: 55px;
+    width: 55px;
+    background-color: $background-2;
+    border: 5px solid #fff;
+
+    &--high {
+      background: $high-supply;
+    }
+
+    &--medium {
+      background: $medium-supply;
+    }
+
+    &--low {
+      background: $low-supply;
+    }
+  }
+
+  &__table tr:last-child &__row-name {
+    border: 0;
+  }
+}

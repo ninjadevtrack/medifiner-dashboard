@@ -1,0 +1,41 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.loader {
+  border: 4px solid $border-color;
+  border-top: 4px solid $primary-color;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+
+  &__float_right {
+    float: right;
+  }
+
+  &__center {
+    margin: auto;
+  }
+
+  &__full_screen {
+    top: calc(50% - 12.5px) !important;
+    right: calc(50% - 12.5px) !important;
+  }
+
+  &__on_top {
+    border: 4px solid #ffffff;
+    border-top: 4px solid $primary-color;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    z-index: 1000;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,29 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.top-filters {
+  position: relative;
+
+  &__row {
+    margin: -16px -32px;
+  }
+
+  &__column {
+    float: left;
+    width: 25%;
+    padding: 16px 32px;
+
+    &--wide {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__column {
+      width: 50%;
+
+      &--wide {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import './app/common/styles/utils/_vars.scss';
+
+.menu {
+  position: relative;
+  margin: -16px -20px -10px;
+
+
+  &__label {
+    margin: 0 0 10px;
+    color: $text-color;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  &__toggle {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+    transition: all .25s ease;
+
+    &--placeholder {
+      color: $text-light-color;
+    }
+  }
+
+  &__open-container--is-open &__label,
+  &__open-container--is-open &__toggle {
+    color: #fff;
+  }
+
+  &__list-container {
+    position: absolute;
+    right: 0;
+    left: -100px;
+    z-index: 1001;
+    background: transparent;
+    border-radius: 0 0 3px 3px;
+    transition: all .25s ease;
+    margin-top: 10px;
+
+    &--is-open {
+      background: white;
+      border: 1px solid $border-color;
+    }
+  }
+
+  &__items-list {
+    margin: 0;
+    padding: 22px 26px;
+    list-style: none;
+  }
+
+  &__item-button {
+    width: 100%;
+    padding: 2px 20px 4px;
+    background: transparent;
+    border: 0;
+    border-radius: 18.5px;
+    color: $background-3;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    transition: all .25s ease;
+    text-align: center;
+    color: $primary-color;
+
+    &:hover {
+      color: $primary-color-hover;
+    }
+  }
+}
